@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" fill="none">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f3b4a" />
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; font-size: 14px; fill: #1f2a35; }
+      rect, circle { stroke: #2f3b4a; stroke-width: 2; fill: #eef2f7; }
+      line { stroke: #2f3b4a; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <!-- Nodes -->
+  <circle cx="80" cy="70" r="30" fill="#e5f4ff" />
+  <text x="80" y="75" text-anchor="middle">User/API</text>
+
+  <rect x="190" y="40" width="170" height="70" rx="10" />
+  <text x="275" y="70" text-anchor="middle">FastAPI</text>
+  <text x="275" y="90" text-anchor="middle">/orchestrate · /agent-proxy</text>
+
+  <rect x="330" y="140" width="160" height="60" rx="10" />
+  <text x="410" y="170" text-anchor="middle">Orchestrator</text>
+
+  <rect x="170" y="240" width="140" height="60" rx="10" />
+  <text x="240" y="270" text-anchor="middle">Portfolio</text>
+
+  <rect x="350" y="240" width="140" height="60" rx="10" />
+  <text x="420" y="270" text-anchor="middle">Analytics</text>
+
+  <rect x="530" y="240" width="140" height="60" rx="10" />
+  <text x="600" y="265" text-anchor="middle">Trader</text>
+  <text x="600" y="285" text-anchor="middle">approvals + execution</text>
+
+  <rect x="350" y="350" width="140" height="60" rx="10" />
+  <text x="420" y="380" text-anchor="middle">MCP server</text>
+  <text x="420" y="400" text-anchor="middle">tools + data</text>
+
+  <rect x="560" y="350" width="160" height="60" rx="10" />
+  <text x="640" y="380" text-anchor="middle">Graylog / OTEL</text>
+  <text x="640" y="400" text-anchor="middle">logs + traces</text>
+
+  <!-- Edges -->
+  <line x1="110" y1="70" x2="190" y2="70" />
+  <line x1="275" y1="110" x2="410" y2="140" />
+
+  <line x1="410" y1="200" x2="240" y2="240" />
+  <line x1="410" y1="200" x2="420" y2="240" />
+  <line x1="410" y1="200" x2="600" y2="240" />
+
+  <line x1="240" y1="300" x2="420" y2="350" />
+  <line x1="420" y1="300" x2="420" y2="350" />
+  <line x1="600" y1="300" x2="420" y2="350" />
+
+  <line x1="420" y1="410" x2="640" y2="380" />
+  <line x1="410" y1="200" x2="640" y2="350" />
+  <line x1="275" y1="110" x2="640" y2="350" />
+</svg>
